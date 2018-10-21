@@ -7,12 +7,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 /** È necessario importare tutti i componenti (anche questo è stato importato in automatico) **/
 import { GodComponent } from './god/god.component';
+import { GodDetailComponent } from './god-detail/god-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 /** contiene metadati critici, affiancando il Component decorator (top-level AppModule class) **/
 @NgModule({
   declarations: [
     AppComponent,
-    GodComponent /** i componenti vanno anche dichiarati, non solo importati! **/
+    GodComponent,
+    GodDetailComponent,
+    MessagesComponent /** i componenti vanno anche dichiarati, non solo importati! **/
   ],
   imports: [
     BrowserModule,
