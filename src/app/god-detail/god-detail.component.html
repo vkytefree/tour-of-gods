@@ -1,11 +1,22 @@
+
 <div *ngIf="god">
 
-  <h2>{{god.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{god.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="god.name" placeholder="name"/>
-    </label>
+  <h2>{{god.name}}</h2>
+  <div class="row">
+    <div class="col-8">
+      <div class="col-form-label"><label>Name:</label> {{ god.name }}</div>
+    </div>
+    <div class="col-4">
+      <img src="assets/gods-img/{{god.pic}}" class="img-thumbnail">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      {{ god.description }}
+    </div>
   </div>
 
 </div>
+
+
+<!-- <input [(ngModel)]="god.name" placeholder="name"/> -->
