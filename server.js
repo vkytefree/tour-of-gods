@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/tour-of-gods'));
 
 app.get('/*', function(req,res) {
 
-  res.sendFile(path.join(__dirname+'/dist/tour-of-gods/index.html'));
+  res.sendFile(path.join(__dirname+'/dist/tour-of-gods/src/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
