@@ -3,6 +3,7 @@
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="assets/gods-img/{{god.pic}}" alt="Card image cap">
       <div class="card-body">
+        <small>{{ god.alignment }}</small>
         <h5 class="card-title">{{god.name}}</h5>
         <p class="card-text">{{ god.epithet }}</p>
         <a routerLink="/detail/{{god.id}}" class="btn btn-primary">Read more</a>
