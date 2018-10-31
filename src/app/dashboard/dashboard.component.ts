@@ -8,7 +8,7 @@ import { GodService } from '../god.service';
   styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent implements OnInit {
-  heroes: God[] = [];
+  gods: God[] = [];
 
   constructor(private heroService: GodService) { }
 
@@ -18,6 +18,6 @@ export class DashboardComponent implements OnInit {
 
   getHeroes(): void {
     this.heroService.getGods()
-      .subscribe(gods => this.heroes = gods.slice(1, 5));
+      .subscribe(gods => this.gods = gods.slice(1, 5));
   }
 }
